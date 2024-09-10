@@ -1,0 +1,154 @@
+/* Header Styles */
+.header {
+  background: linear-gradient(90deg, #2E8B57, #3CB371); /* Gradient Seagreen */
+  color: #FFFFFF;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  position: fixed; /* Fixed position */
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  left: 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  color: #FFFFFF;
+  font-size: 2rem; /* Larger font size */
+  font-weight: bold;
+  letter-spacing: 1.5px; /* Add spacing for a stylish effect */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin-left: 20px;
+  font-size: 1.1rem; /* Slightly larger font */
+  color: #FFFFFF;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Slight shadow */
+}
+
+.nav-link:hover {
+  color: #FFD700; /* Yellow hover effect */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.nav-link:active {
+  transform: scale(0.95); /* Button press effect */
+}
+
+.button {
+  background-color: #FFD700; /* Yellow button */
+  color: #2E8B57;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #FFA500; /* Darker yellow on hover */
+}
+
+.button:active {
+  transform: scale(0.95); /* Button press effect */
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center; /* Center align items */
+  }
+
+  .logo {
+    margin-bottom: 10px; /* Space between logo and nav links */
+  }
+
+  .nav {
+    margin-top: 10px;
+    justify-content: center; /* Center align navigation links */
+    width: 100%;
+    text-align: center; /* Center align text within nav */
+  }
+
+  .nav-link {
+    margin: 0 10px; /* Adjust margins for mobile */
+  }
+
+  .button {
+    margin: 10px 0; /* Adjust margins for mobile */
+  }
+}
+
+/* Header.css */
+.header {
+  background-color: #2E8B57; /* Seagreen as per your preference */
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+h1 {
+  font-size: 14px;
+  margin: 0;
+}
